@@ -1,5 +1,6 @@
+<h1 align="center">✨ Gwyn-Dotfiles ✨</h1>
+
 <p align="center">
-# Gwyn-Dotfiles
 Dotfiles para a instalação e a configuração do meu Arch Linux
 </p>
 
