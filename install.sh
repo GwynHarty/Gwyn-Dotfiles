@@ -1,10 +1,7 @@
-#!/bin/bash
-set -euo pipefail
-
 # 0) antes de fazer a instalação não esqueça de atualizar o sistema
 
 # 1) Pacotes multimídia (PipeWire + GStreamer + FFmpeg)
-sudo pacman -S --needed --noconfirm \
+sudo pacman -S \
     pipewire \
     pipewire-alsa \
     pipewire-jack \
@@ -19,18 +16,15 @@ sudo pacman -S --needed --noconfirm \
     ffmpeg
 
 # 2) Git + base-devel (para compilar AUR)
-sudo pacman -S --needed --noconfirm git base-devel
+sudo pacman -S git base
 
 # 3) Clonar e instalar yay (AUR helper)
-if [[ ! -d "$HOME/yay" ]]; then
-    git clone https://aur.archlinux.org/yay.git "$HOME/yay"
-    cd "$HOME/yay"
-    makepkg -si --noconfirm
-    cd -
-    rm -rf "$HOME/yay"
-else
-    echo "▶ yay já está em ~/yay — pulando."
-fi
+    git clone https://aur.archlinux.org/yay.git
+    ls # cheque se o yay instalou
+    cd yay
+    ls #tem que ter o arquivo makepkg
+    makepkg -si
+    cd
 
 # 4) Instalar Hyprland e utilitários
 sudo pacman -S --needed --noconfirm \
@@ -59,11 +53,11 @@ sudo pacman -S --needed --noconfirm \
     ttf-font-awesome \
     ttf-jetbrains-mono-nerd \
     noto-fonts \
-    ttf-droid
-    
+    ttf-droid \
+    ttf-iosevka-nerd
+
 # 5) Instalar complementos com o AUR yay (mude o zen caso queira outro navegador)
 yay -S --noconfirm hyprshot wlogout qview visual-studio-code-bin zen-browser-bin
 
 systemctl --user enable pipewire pipewire-pulse pipewireplumber
 
-shutdown -r now
