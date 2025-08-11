@@ -79,6 +79,9 @@ sudo pacman -S fish thefuck zoxide
 # para ativar o fish para o sistema inteiro
 sudo chsh -s /usr/bin/fish
 
+# 3) theme do GTK e do QT e os icons 
+sudo pacman -S breeze breeze5 breeze-gtk papirus-icon-theme
+
 
 
 
