@@ -50,6 +50,7 @@ sudo pacman -S --needed --noconfirm \
     mpv \
     pavucontrol \
     xdg-user-dirs-gtk \
+    gnome-keyring \
     ttf-font-awesome \
     ttf-jetbrains-mono-nerd \
     noto-fonts \
