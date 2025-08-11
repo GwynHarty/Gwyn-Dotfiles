@@ -73,7 +73,10 @@ sudo pacman -S nano
 # instalando o ax-shell (reinicie o computador após a instalação)
 curl -fsSL https://raw.githubusercontent.com/Axenide/Ax-Shell/main/install.sh | bash
 
-
+# 2) fish
+sudo pacman -S fish thefuck zoxide
+# para ativar o fish para o sistema inteiro
+sudo chsh -s /usr/bin/fish
 
 
 
