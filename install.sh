@@ -25,6 +25,7 @@ sudo pacman -S git base
     ls #tem que ter o arquivo makepkg
     makepkg -si
     cd
+    rm -rf yay/
 
 # 0.4) Instalar Hyprland e utilitários
 sudo pacman -S --needed --noconfirm \
