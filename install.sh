@@ -87,6 +87,8 @@ yay -S --noconfirm qt5ct-kde qt6ct-kde
 
 foot mate-polkit gammastep starship fastfetch nwg-look
 
+yay -S qt5ct-kde qt6ct-kde
+
 
 
 
