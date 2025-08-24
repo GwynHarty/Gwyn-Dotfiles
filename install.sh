@@ -85,7 +85,7 @@ sudo pacman -S breeze breeze5 breeze-gtk papirus-icon-theme
 sudo pacman -S nwg-look
 yay -S --noconfirm qt5ct-kde qt6ct-kde
 
-thunar foot mate-polkit gvfs
+foot mate-polkit gammastep
 
 
 
