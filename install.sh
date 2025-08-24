@@ -62,7 +62,7 @@ sudo pacman -S --needed --noconfirm \
 yay -S --noconfirm hyprshot wlogout qview visual-studio-code-bin zen-browser-bin
 
 # 0.6) abilitando o pipewire
-systemctl --user enable pipewire pipewire-pulse pipewireplumber
+systemctl --user enable pipewire pipewire-pulse wireplumber
 
 # 0.7) depois disso reinicie o computador com
 shutdown -r now
@@ -85,7 +85,7 @@ sudo pacman -S breeze breeze5 breeze-gtk papirus-icon-theme
 sudo pacman -S nwg-look
 yay -S --noconfirm qt5ct-kde qt6ct-kde
 
-
+polkit-gnome
 
 
 
