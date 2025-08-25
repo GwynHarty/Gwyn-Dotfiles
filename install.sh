@@ -13,12 +13,15 @@ sudo pacman -S \
     gst-plugins-good \
     gst-plugins-bad \
     gst-plugins-ugly \
-    ffmpeg
+    ffmpeg \
+    git \
+    base \
+    vdirsyncer \
+    khal \
+    python-aiohttp-oauthlib \
+    khal \
+    
 
-# 0.2) Git + base-devel (para compilar AUR)
-sudo pacman -S git base
-
-# 0.3) Clonar e instalar yay (AUR helper)
     git clone https://aur.archlinux.org/yay.git
     ls # cheque se o yay instalou
     cd yay
