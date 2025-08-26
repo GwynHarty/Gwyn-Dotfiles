@@ -50,7 +50,7 @@ PACMAN_PKGS=(
   ark kio-admin mate-polkit qt5-wayland qt6-wayland xdg-desktop-portal-hyprland
   xdg-desktop-portal-gtk cliphist mpv pavucontrol xdg-user-dirs-gtk
   gnome-keyring ttf-font-awesome ttf-jetbrains-mono-nerd ttf-iosevka-nerd
-  git base-devel cava wl-clipboard brightnessctl
+  git base-devel cava wl-clipboard brightnessctl base-devel
 )
 
 # pacotes AUR gerais
